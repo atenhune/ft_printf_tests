@@ -6,10 +6,9 @@
 /*   By: atenhune <atenhune@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 13:01:12 by atenhune          #+#    #+#             */
-/*   Updated: 2022/05/19 20:27:04 by atenhune         ###   ########.fr       */
+/*   Updated: 2022/06/03 18:22:37 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stdio.h>
 #include <limits.h>
@@ -18,17 +17,6 @@ int	ft_printf(const char *str, ...);
 
 int main(void)
 {
-	ft_printf("%llllllllld\n", LLONG_MAX);
-	ft_printf("%llllllllld\n", 0ll);
-	ft_printf("%llllllhhhhllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 0ll);
-	ft_printf("%++++++00000llllllllld\n", 123);
-	ft_printf("%++++++#+ 00000lllllllllu\n", 123u);
-	ft_printf("%++++++#+ 00000lllllllll\n", 123u);
 	ft_printf("%0-12s\n", "MORO");
 	ft_printf("%0#-12s\n", "MORO");
 	ft_printf("%0-12s\n", NULL);
@@ -50,5 +38,16 @@ int main(void)
 	ft_printf("%*.*d\n", -5, -10, 123);
 	ft_printf("%*.*hhhhhhhhhhhllhlhlhlhd\n", -5, -10, 123l);
 	ft_printf("%*.*hhhhhhhhhzzjjjlhlhlhd\n", -5, -10, 123l);
+	ft_printf("%llllllllld\n", LLONG_MAX);
+	ft_printf("%llllllllld\n", 0ll);
+	ft_printf("%llllllhhhhllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 0ll);
+	ft_printf("%++++++00000llllllllld\n", 123);
+	ft_printf("%++++++#+ 00000lllllllllu\n", 123u);
+	ft_printf("%++++++#+ 00000lllllllll\n", 123u);
 
 }

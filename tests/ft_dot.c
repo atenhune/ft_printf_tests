@@ -6,10 +6,9 @@
 /*   By: atenhune <atenhune@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 12:08:12 by atenhune          #+#    #+#             */
-/*   Updated: 2022/05/19 20:22:47 by atenhune         ###   ########.fr       */
+/*   Updated: 2022/06/06 15:21:51 by atenhune         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stdio.h>
 #include <limits.h>
@@ -18,9 +17,7 @@ int	ft_printf(const char *str, ...);
 
 int main(void)
 {
-	printf("%%012.2d\t");
 	ft_printf("%012.2d\n", 42);
-	printf("%% 012.4d\t");
 	ft_printf("% 012.4d\n", 42);
 	ft_printf("% 0-12.19d\n", 42);
 	ft_printf("%012.2d\n", -42);
@@ -222,29 +219,29 @@ int main(void)
 	ft_printf("%.4Lf\n", -19.99999999l);
 	ft_printf("%.20Lf\n", -191231232.99999999l);
 	ft_printf("%.30Lf\n", -191231232.99999999l);
-	ft_printf("%.40Lf\n\n", -191231232.99999999l);
-	ft_printf("%.50Lf\n\n", -191231232.99999999l);
-	ft_printf("%+.5f\n\n", 0.000001f);
-	ft_printf("% .5f\n\n", 0.000005f);
-	ft_printf("%+ .5f\n\n", 0.000009f);
-	ft_printf("%012.f\n\n", 9.4f);
-	ft_printf("%0-12.f\n\n", 9.5f);
-	ft_printf("% 32.f\n\n", 9.9f);
-	ft_printf("%+2.f\n\n", 99.9f);
-	ft_printf("%-12.10f\n\n", 99.99999999999f);
-	ft_printf("%+9.10f\n\n", 99.213981273819123f);
-	ft_printf("%+9.10f\n\n", -99.213981273819123f);
-	ft_printf("%-.10f\n\n", 42.73819123f);
-	ft_printf("%-+1.4f\n\n", 42.42424242f);
-	ft_printf("% -14.12f\n\n", 0.0005f);
-	ft_printf("%-+.12f\n\n", 1.232323232323f);
-	ft_printf("%0 14.12f\n\n", 8363748372381233.1239138432f);
-	ft_printf("% -22.2f\n\n", 8363748372381233.1239138432f);
-	ft_printf("%+2.3f\n\n", 8363748372381233.1239138432f);
-	ft_printf("%-1.3f\n\n", 5.55500000000001f);
-	ft_printf("%-19.11f\n\n", 0.000000000001f);
-	ft_printf("%+-0 .11f\n\n", 0.000000000005f);
-	ft_printf("% -21.11f\n\n", 0.000000000009f);
-	ft_printf("%+101.100f\n\n", 0.0005f);
-	ft_printf("%+101.100f\n\n", -0.0005f);
+	ft_printf("%.40Lf\n", -191231232.99999999l);
+	ft_printf("%.50Lf\n", -191231232.99999999l);
+	ft_printf("%+.5f\n", 0.000001f);
+	ft_printf("% .5f\n", 0.000005f);
+	ft_printf("%+ .5f\n", 0.000009f);
+	ft_printf("%012.f\n", 9.4f);
+	ft_printf("%0-12.f\n", 9.5f);
+	ft_printf("% 32.f\n", 9.9f);
+	ft_printf("%+2.f\n", 99.9f);
+	ft_printf("%-12.10f\n", 99.99999999999f);
+	ft_printf("%+9.10f\n", 99.213981273819123f);
+	ft_printf("%+9.10f\n", -99.213981273819123f);
+	ft_printf("%-.10f\n", 42.73819123f);
+	ft_printf("%-+1.4f\n", 42.42424242f);
+	ft_printf("% -14.12f\n", 0.0005f);
+	ft_printf("%-+.12f\n", 1.232323232323f);
+	ft_printf("%0 14.12f\n", 8363748372381233.1239138432f);
+	ft_printf("% -22.2f\n", 8363748372381233.1239138432f);
+	ft_printf("%+2.3f\n", 8363748372381233.1239138432f);
+	ft_printf("%-1.3f\n", 5.55500000000001f);
+	ft_printf("%-19.11f\n", 0.000000000001f);
+	ft_printf("%+-0 .11f\n", 0.000000000005f);
+	ft_printf("% -21.11f\n", 0.000000000009f);
+	ft_printf("%+101.100f\n", 0.0005f);
+	ft_printf("%+101.100f\n", -0.0005f);
 }

@@ -55,6 +55,14 @@ diff -y test_output ft_test_output > dot_diff
 gcc -w compare.c
 ./a.out dot_diff DOT
 
+gcc -w niche.c ../libftprintf.a
+./a.out > test_output
+gcc -w ft_niche.c ../libftprintf.a
+./a.out > ft_test_output
+diff -y test_output ft_test_output > niche_diff
+gcc -w compare.c
+./a.out niche_diff NICHE
+
 gcc -w undefined.c ../libftprintf.a
 ./a.out > test_output
 gcc -w ft_undefined.c ../libftprintf.a
@@ -63,4 +71,4 @@ diff -y test_output ft_test_output > undefined_diff
 gcc -w compare.c
 ./a.out undefined_diff UNDEFINED
 
-# rm simple_diff less_simple_diff slightly_complicated_diff complicated_diff more_complicated_diff more_stuff_diff dot_diff undefined_diff test_output ft_test_output a.out
+# rm simple_diff less_simple_diff slightly_complicated_diff complicated_diff more_complicated_diff more_stuff_diff dot_diff niche_diff undefined_diff test_output ft_test_output a.out

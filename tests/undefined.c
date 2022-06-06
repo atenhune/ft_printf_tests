@@ -6,7 +6,7 @@
 /*   By: atenhune <atenhune@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 13:01:12 by atenhune          #+#    #+#             */
-/*   Updated: 2022/05/19 20:26:52 by atenhune         ###   ########.fr       */
+/*   Updated: 2022/06/03 18:22:38 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,8 @@
 #include <limits.h>
 
 
-
 int main(void)
 {
-	printf("%llllllllld\n", LLONG_MAX);
-	printf("%llllllllld\n", 0ll);
-	printf("%llllllhhhhllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 0ll);
-	printf("%++++++00000llllllllld\n", 123);
-	printf("%++++++#+ 00000lllllllllu\n", 123u);
-	printf("%++++++#+ 00000lllllllll\n", 123u);
 	printf("%0-12s\n", "MORO");
 	printf("%0#-12s\n", "MORO");
 	printf("%0-12s\n", NULL);
@@ -50,5 +38,16 @@ int main(void)
 	printf("%*.*d\n", -5, -10, 123);
 	printf("%*.*hhhhhhhhhhhllhlhlhlhd\n", -5, -10, 123l);
 	printf("%*.*hhhhhhhhhzzjjjlhlhlhd\n", -5, -10, 123l);
+	printf("%llllllllld\n", LLONG_MAX);
+	printf("%llllllllld\n", 0ll);
+	printf("%llllllhhhhllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 0ll);
+	printf("%++++++00000llllllllld\n", 123);
+	printf("%++++++#+ 00000lllllllllu\n", 123u);
+	printf("%++++++#+ 00000lllllllll\n", 123u);
 
 }

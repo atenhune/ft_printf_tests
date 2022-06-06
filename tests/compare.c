@@ -6,7 +6,7 @@
 /*   By: antti <antti@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 11:07:51 by atenhune          #+#    #+#             */
-/*   Updated: 2022/04/22 18:52:04 by antti            ###   ########.fr       */
+/*   Updated: 2022/06/03 17:31:15 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int main(int argc, char **argv)
 	int count = 0;
 	int lasku = 0;
 	int read_ret;
-	int offset = 19;
+	int offset = 20;
+
 	printf("\n%s%s:\n", KMAG, argv[2]);
 	fd = open(argv[1], O_RDONLY);
 	read_ret = read(fd, buff, 10000);
@@ -50,7 +51,7 @@ int main(int argc, char **argv)
 		}
 		if(buff[i]== '|')
 		{
-			printf("%s[FAIL](%d)", RED, count + offset);
+			printf("%s[KO](%d)", RED, count + offset);
 			k = 1;
 			j = 0; 
 		}

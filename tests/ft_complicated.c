@@ -6,13 +6,12 @@
 /*   By: atenhune <atenhune@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 11:52:53 by atenhune          #+#    #+#             */
-/*   Updated: 2022/05/19 20:22:39 by atenhune         ###   ########.fr       */
+/*   Updated: 2022/05/26 18:33:44 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <limits.h>
-
 
 int	ft_printf(const char *str, ...);
 
